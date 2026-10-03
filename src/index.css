@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#030718] text-slate-100 antialiased overflow-x-hidden;
+    background-image: 
+      radial-gradient(circle at 50% 10%, rgba(30, 58, 138, 0.35) 0%, transparent 60%),
+      radial-gradient(circle at 20% 80%, rgba(202, 138, 4, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.12) 0%, transparent 50%),
+      linear-gradient(to bottom, #030718 0%, #060d28 50%, #02040d 100%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom Scrollbar for ladder and history */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(202, 138, 4, 0.5);
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 179, 8, 0.8);
+}
